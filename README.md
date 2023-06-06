@@ -17,6 +17,15 @@ Here are some screenshots of app
 ![Screenshot](audiocall.jpg)
 ![Screenshot](attendance.jpg)
 ![Screenshot](connections.jpg)
+![Screenshot](suggestions.jpg)
+![Screenshot](class.jpg)
+![Screenshot](subjects.jpg)
+![Screenshot](mysubject.jpg)
+![Screenshot](chat.jpg)
+![Screenshot](nav.jpg)
+![Screenshot](pdf.jpg)
+![Screenshot](addsubject.jpg)
+
 
 
 For further clarfications or doubts you can connect with me at amanpandey12398@gmail.com 
