@@ -6,6 +6,6 @@ You will need three things for this application to work
 3. FCM Server Key
 
 Here are some screenshots of app
-![Screenshot](profile.png)
+![Screenshot](profile.jpg)
 
 For further clarfications or doubts you can connect with me at amanpandey12398@gmail.com 
