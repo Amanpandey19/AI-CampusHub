@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_margin="3dp"
+    android:elevation="2dp"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="2dp"
+    android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <com.alexzh.circleimageview.CircleImageView
+                android:id="@+id/connection_image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginHorizontal="30dp"
+                android:layout_marginTop="20dp"
+                app:view_borderWidth="1dp"
+                app:view_borderColor="@color/black"
+                android:src="@drawable/user_two"/>
+
+            <TextView
+                android:id="@+id/connection_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Aman Pandey"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/black"/>
+
+
+            <TextView
+                android:id="@+id/connection_course"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="MCA NIT KKR"
+                android:textSize="13sp"
+                android:gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:textColor="@color/black"/>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>

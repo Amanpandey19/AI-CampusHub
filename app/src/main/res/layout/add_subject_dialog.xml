@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    android:layout_marginTop="-0dp"
+    android:backgroundTint="@color/white"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout_subject_name"
+            android:layout_width="match_parent"
+            android:hint="@string/subject_name"
+            android:layout_marginTop="10dp"
+            app:startIconDrawable="@drawable/baseline_library_books_24"
+            app:helperText="Required*"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/add_subject_input_selector"
+            app:hintTextColor="@color/add_subject_input_selector"
+            app:helperTextTextColor="@color/red"
+            android:textColorHint="@color/grey"
+            app:startIconTint="@color/black_overlay"
+            app:boxStrokeColor="@color/add_subject_input_selector"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editext_subject_name"
+                android:layout_width="match_parent"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:inputType="textAutoComplete"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_total_classes"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginEnd="10dp"
+                android:backgroundTint="@color/add_subject_input_selector"
+                android:hint="@string/total_classes"
+                android:textColorHint="@color/grey"
+                app:startIconTint="@color/black"
+                app:startIconDrawable="@drawable/school48px"
+                app:hintTextColor="@color/add_subject_input_selector"
+                app:boxStrokeColor="@color/add_subject_input_selector"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editext_total_classes"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/input_layout_attended_classes"
+                android:layout_width="match_parent"
+                android:hint="@string/attended_classes"
+                android:layout_marginStart="10dp"
+                android:layout_weight="1"
+                android:textColorHint="@color/grey"
+                android:backgroundTint="@color/add_subject_input_selector"
+                app:startIconDrawable="@drawable/school48px"
+                app:hintTextColor="@color/add_subject_input_selector"
+                app:startIconTint="@color/add_subject_input_selector"
+                app:boxStrokeColor="@color/add_subject_input_selector"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editext_attended_classes"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:inputType="number"
+                    android:textSize="12sp"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/add_subject_dialogue_btn"
+                android:layout_width="wrap_content"
+                android:text="@string/add_subject"
+                android:minWidth="0dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="25dp"
+                android:minHeight="0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingVertical="10dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginStart="15dp"
+                android:background="@drawable/add_subject_bg"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"
+                tools:ignore="RelativeOverlap" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_dialogue_btn"
+                android:layout_width="wrap_content"
+                android:text="Cancel"
+                android:minWidth="0dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:minHeight="0dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:paddingVertical="10dp"
+                android:layout_marginEnd="15dp"
+                android:paddingHorizontal="30sp"
+                android:background="@drawable/cancel_subject_bg"
+                android:textColor="@color/white"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

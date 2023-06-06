@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_marginTop="8dp"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/DarkGray"/>
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/Link_description"
+            android:layout_width="wrap_content"
+            android:text="CSS is the language we use to style an HTML document.CSS describes how HTML elements should be displayed."
+            android:textColor="@color/black"
+            android:textSize="13sp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/Link_url"
+            android:layout_width="wrap_content"
+            android:text="Click here to see the pdf"
+            android:textColor="@color/blue"
+            android:textSize="13sp"
+            android:autoLink="web"
+            android:textColorLink="@color/blue"
+            android:linksClickable="true"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/Link_author"
+                android:layout_width="wrap_content"
+                android:text="Posted By - Aman Pandey"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:gravity="start"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"/>
+
+
+            <TextView
+                android:id="@+id/Link_uploadtime"
+                android:layout_width="wrap_content"
+                android:text="On 13 Mar 23"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>

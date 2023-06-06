@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="ifRoom"
+        android:title="Home">
+    </item>
+    <item
+        android:id="@+id/classes"
+        android:icon="@drawable/ic_class_24"
+        app:showAsAction="ifRoom"
+        android:title="My class">
+    </item>
+    <item
+        android:id="@+id/holder"
+        app:showAsAction="ifRoom"
+        android:enabled="false"
+        android:title="">
+    </item>
+    <item
+        android:id="@+id/account"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="ifRoom"
+        android:title="Account">
+    </item>
+    <item
+        android:id="@+id/suggestion"
+        android:icon="@drawable/ic_baseline_settings_suggest_24"
+        app:showAsAction="ifRoom"
+        android:title="Suggestions">
+    </item>
+</menu>

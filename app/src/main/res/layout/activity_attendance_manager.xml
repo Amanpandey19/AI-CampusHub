@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lightGrey"
+    tools:context=".Home.AttendanceManagerActivity">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/my_attendance"
+        android:fontFamily="sans-serif-black"
+        android:textSize="25sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/add_your_subjects_to_keep_track_of_your_attendance"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_marginStart="15dp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:clickable="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content"
+        android:focusable="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginVertical="15dp"
+                android:layout_weight="2"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="7dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/goal"
+                        android:layout_marginTop="0dp"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:drawablePadding="10dp"
+                        android:layout_height="wrap_content"
+                        app:drawableStartCompat="@drawable/baseline_flag_24" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:text="@string/_75"
+                        android:textStyle="bold"
+                        android:textSize="14sp"
+                        android:layout_marginStart="4dp"
+                        android:textColor="@color/black"
+                        android:drawablePadding="10dp"
+                        android:layout_height="wrap_content"/>
+
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="@string/overall_attendance"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:textColor="@color/black"
+                            android:drawablePadding="15dp"
+                            android:layout_marginStart="5dp"
+                            android:layout_height="wrap_content"
+                            app:drawableStartCompat="@drawable/tick" />
+
+                        <TextView
+                            android:id="@+id/overallAttendance"
+                            android:layout_width="wrap_content"
+                            android:text="@string/_100"
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:textSize="14sp"
+                            android:layout_marginStart="4dp"
+                            android:textColor="@color/black"
+                            android:drawablePadding="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:textColor="@color/black"
+                    android:text="Choose from existing subjects or add new Ones"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ProgressBar
+                            android:id="@+id/progress_bar"
+                            style="@style/CircularDeterminateProgressBar"
+                            android:layout_width="70dp"
+                            android:layout_centerHorizontal="true"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            android:progressTint="@color/green"
+                            tools:progress="100" />
+
+                        <TextView
+                            android:id="@+id/myTextProgress"
+                            android:layout_alignStart="@id/progress_bar"
+                            android:layout_alignTop="@id/progress_bar"
+                            android:layout_alignEnd="@id/progress_bar"
+                            android:layout_alignBottom="@id/progress_bar"
+                            android:background="@android:color/transparent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_100"
+                            android:gravity="center"
+                            android:textColor="@color/black"
+                            android:layout_width="wrap_content"/>
+
+                    </RelativeLayout>
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/add_subject"
+                        android:layout_width="wrap_content"
+                        android:text="@string/add_subject"
+                        android:minWidth="0dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:minHeight="0dp"
+                        android:gravity="center"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:layout_marginStart="10dp"
+                        android:background="@drawable/add_subject_bg"
+                        android:textColor="@color/white"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/subjects_recyler_view"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

@@ -1,0 +1,102 @@
+<resources>
+    <string name="app_name">Online Campus</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Screen 1</string>
+    <string name="slide_1_desc">Manage your social life in college using Online Campus with Doubt Sessions, Chat rooms, Video sessions and much more.</string>
+
+    <string name="slide_2_title">Screen 2</string>
+    <string name="slide_2_desc">Experience your campus life in a whole different way with Online Campus, share your achievements online for your peers and teachers to see.</string>
+
+    <string name="slide_3_title">Screen 3</string>
+    <string name="slide_3_desc">Interact with students of your department as well as other department and improve your academic as well as social skills.</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="todo">TODO</string>
+    <string name="_21_u00b0">21°</string>
+    <string name="create">Create</string>
+    <string name="your_account_in">your Account in</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="email">Email</string>
+    <string name="select">Select</string>
+    <string name="your_profile">Your profile</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="select_your_course">Select your Course</string>
+    <string name="i_accept_all_terms_of_use_and_privacy_policy">I accept all terms of use and privacy policy</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_sign_in">Already have an account? Sign in</string>
+    <string name="course">Course</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="password">Password</string>
+    <string name="don_t_have_an_account_sign_up">Don\'t have an account? Sign up</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="hello">Hello.</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="project">Project</string>
+    <string name="text_recognition_system">Text Recognition System</string>
+    <string name="last_active_day_yesterday">Last Active day : Yesterday</string>
+    <string name="attendance">Attendance</string>
+    <string name="manage">Manage</string>
+    <string name="goal">Goal</string>
+    <string name="_75">75%</string>
+    <string name="overall_attendance">Overall Attendance</string>
+    <string name="_100">100%</string>
+    <string name="connections">Connections</string>
+    <string name="view_all">View All</string>
+    <string name="posts">Posts</string>
+    <string name="add_project">Add project</string>
+    <string name="_2nd_year">2nd Year</string>
+    <string name="mca_nit_kkr">MCA NIT KKR</string>
+    <string name="aman_pandey">Aman Pandey</string>
+    <string name="add">Add</string>
+    <string name="add_subject">Add Subject</string>
+    <string name="save_changes">Save Changes</string>
+    <string name="i_am_very_happy_to_share_that_i_have_solved_200_questions_on_leetcode_i_would_like_to_thank_my_friends_who_pushed_me_to_reach_this_milestone_thank_you">I am very happy to share that i have solved 200 questions on leetcode. I would like to thank my friends who pushed me to reach this milestone. Thank you.</string>
+    <string name="_78_likes">78 Likes</string>
+    <string name="_10_comments">10 Comments</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="save">Save</string>
+    <string name="akshita_grover">Akshita Grover</string>
+    <string name="_5_days">5 days</string>
+    <string name="anuj_rai">Anuj Rai</string>
+    <string name="_14_52">14:52</string>
+    <string name="hi_akshita_how_you_doing_can_you_help_me_out_with_something">Hi Akshita , How you doing? Can you help me out with something</string>
+    <string name="typing">Typing ...</string>
+    <string name="seen">Seen</string>
+    <string name="chats">Chats</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="attended_classes">Attended Classes</string>
+    <string name="total_classes">Total Classes</string>
+    <string name="no_pdf_selected">No Pdf Selected</string>
+    <string name="click_here_to_see_the_pdf"><u>Click here to see the pdf</u></string>
+    <string name="type_here">Type here</string>
+    <string name="ask_your_doubts">Ask Your Doubts</string>
+    <string name="you_can_message_or_remove_your_connections">You can message or remove your connections</string>
+    <string name="your_connections">Your Connections</string>
+    <string name="remove">Remove</string>
+    <string name="delete">Delete</string>
+    <string name="please_wait">Please wait</string>
+    <string name="add_post">Add Post</string>
+    <string name="select_image">Select Image</string>
+    <string name="add_your_comment">Add your comment</string>
+    <string name="very_useful_information_thanks_for_sharing">Very Useful information, Thanks for sharing</string>
+    <string name="_1">1</string>
+    <string name="message">Message</string>
+    <string name="add_your_subjects_to_keep_track_of_your_attendance">Add your Subjects to keep track of your attendance</string>
+    <string name="my_attendance">My Attendance</string>
+
+    <string-array name="Courses">
+        <item>BTech</item>
+        <item>MTech</item>
+        <item>MBA</item>
+        <item>MCA</item>
+    </string-array>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".Home.UploadSyllabusActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/pdfText"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:text="@string/no_pdf_selected"
+            android:layout_marginTop="15dp"
+            android:layout_width="170dp"
+            android:layout_height="100dp"/>
+
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/select_syllabus_btn"
+            android:layout_width="match_parent"
+            android:text="Select File"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/add_subject_bg"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/upload_syllabus_btn"
+            android:layout_width="match_parent"
+            android:text="Upload "
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/upload_bg"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

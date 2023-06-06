@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:backgroundTint="@color/white"
+    tools:context=".Home.UploadNotesActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_topic_name"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Topic name"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/baseline_library_books_24"
+        app:helperText="Required*"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/add_subject_input_selector"
+        app:hintTextColor="@color/add_subject_input_selector"
+        app:helperTextTextColor="@color/red"
+        android:textColorHint="@color/grey"
+        app:startIconTint="@color/black_overlay"
+        app:boxStrokeColor="@color/add_subject_input_selector"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editext_topic_name"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:inputType="textAutoComplete"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_layout_topic_description"
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:hint="Topic Description"
+        android:layout_marginTop="10dp"
+        app:startIconDrawable="@drawable/baseline_library_books_24"
+        app:helperText="Required*"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/add_subject_input_selector"
+        app:hintTextColor="@color/add_subject_input_selector"
+        app:helperTextTextColor="@color/red"
+        android:textColorHint="@color/grey"
+        app:startIconTint="@color/black_overlay"
+        app:boxStrokeColor="@color/add_subject_input_selector"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editext_topic_description"
+            android:layout_width="match_parent"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:inputType="textAutoComplete"
+            android:layout_height="wrap_content"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:weightSum="2">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/select_notes_btn"
+            android:layout_width="match_parent"
+            android:text="Select Notes"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/add_subject_bg"
+            android:textColor="@color/white"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap" />
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_weight="1"
+            android:id="@+id/upload_notes_btn"
+            android:layout_width="match_parent"
+            android:text="Upload Notes"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:gravity="center"
+            android:layout_marginEnd="10dp"
+            android:layout_gravity="center"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:background="@drawable/upload_bg"
+            android:layout_height="wrap_content"
+            tools:ignore="RelativeOverlap" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

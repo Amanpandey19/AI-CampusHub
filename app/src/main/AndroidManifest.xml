@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.eCampusNITK">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ECampusNITK">
+        <activity
+            android:name=".Home.ChatActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar"/>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".Home.AddPostActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar" />
+        <activity
+            android:name=".Home.EditProfileActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar" />
+        <activity
+            android:name=".Home.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home.ViewRequestActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar" />
+        <activity
+            android:name=".Home.ViewConnectionsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar" />
+        <activity
+            android:name=".Home.PdfViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.UploadSyllabusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.UploadTimeTableActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.UploadNotesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.UploadLinkActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.ViewSubjectDetailsActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar" />
+        <activity
+            android:name=".Home.ChatBotActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Home.ChatHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Home.AddSubjectActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Home.AttendanceManagerActivity"
+            android:exported="false"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar"/>
+        <activity
+            android:name=".Home.SignUpActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Home.WelcomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Home.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity
+            android:name=".Home.HomeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ECampusNITK.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".Core.FirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+
+    </application>
+
+</manifest>

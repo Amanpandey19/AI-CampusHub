@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:backgroundTint="@color/lightGrey"
+    tools:context=".Home.ChatBotActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/black"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_marginStart="5dp"
+            android:src="@drawable/chatgpt"
+            android:layout_gravity="center"
+            android:layout_height="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Helper Bot"
+            android:textStyle="bold"
+            android:layout_margin="7dp"
+            android:textSize="22sp"
+            android:background="@color/black"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/recycler_view"
+        android:layout_marginTop="45dp"
+        android:layout_above="@id/bottom_layout"
+        />
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="@color/grey"
+        android:text="@string/ask_your_doubts"
+        android:textSize="28sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:id="@+id/bottom_layout">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="107dp"
+            android:background="@color/white"
+            android:backgroundTint="@color/white"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="1dp"
+            app:cardCornerRadius="50dp">
+
+            <EditText
+                android:id="@+id/message_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="5dp"
+                android:background="@null"
+                android:padding="11dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/light_black"
+                android:hint="@string/type_here"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/btn_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/voice_btn"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_button_background"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/baseline_mic_24"
+                app:tint="@color/black" />
+
+            <ImageButton
+                android:id="@+id/send_btn"
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:background="@drawable/circular_button_background"
+                android:backgroundTint="@color/white"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_send_24"
+                app:tint="@color/black" />
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:id="@+id/audio_on_off"
+        app:maxImageSize="30dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/baseline_volume_up_24"
+        android:tint="@color/black"
+        android:layout_height="wrap_content"/>
+
+
+</RelativeLayout>

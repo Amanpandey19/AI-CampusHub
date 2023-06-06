@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/grey_theme"
+    android:background="@color/grey_theme"
+    tools:context=".Home.ViewSubjectDetailsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Web Technologies"
+            android:fontFamily="sans-serif-black"
+            android:textSize="25sp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/black"
+            android:layout_marginStart="15dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can upload links and notes which you find usefull for this subject"
+            android:textSize="12sp"
+            android:layout_marginTop="3dp"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="15dp"
+            />
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            app:cardCornerRadius="5dp"
+            android:background="@color/white"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/white"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="5dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Syllabus"
+                        android:fontFamily="sans-serif-black"
+                        android:textSize="16sp"
+                        android:layout_marginTop="5dp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="10dp"
+                        />
+
+                    <TextView
+                        android:id="@+id/upload_Syllabus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add New"
+                        android:layout_marginEnd="10dp"
+                        android:paddingHorizontal="10dp"
+                        android:paddingVertical="5dp"
+                        android:textSize="13sp"
+                        android:layout_alignParentEnd="true"
+
+                        android:background="@drawable/add_classes_btn_selector"
+                        android:textColor="@color/white"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/no_syllabus_available_text"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:text="No Syllabus Available, Upload one"/>
+                <LinearLayout
+                    android:id="@+id/syllabus_view"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/syllabus_url"
+                        android:layout_width="wrap_content"
+                        android:text="View Syllabus"
+                        android:textColor="@color/blue"
+                        android:textSize="14sp"
+                        android:autoLink="web"
+                        android:textStyle="bold"
+                        android:textColorLink="@color/blue"
+                        android:linksClickable="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="wrap_content"/>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/syllabus_author"
+                            android:layout_width="wrap_content"
+                            android:text="Posted By - Aman Pandey"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:gravity="start"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"/>
+
+
+                        <TextView
+                            android:id="@+id/syllabus_uploadtime"
+                            android:layout_width="wrap_content"
+                            android:text="On 13 Mar 23"
+                            android:textColor="@color/black"
+                            android:textSize="13sp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"/>
+
+                    </RelativeLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notes"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/upload_Notes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add "
+                android:layout_marginEnd="10dp"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="5dp"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/add_classes_btn_selector"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/no_Notes_available_text"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="No Notes Available, Upload one"/>
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/notes_recylerview"
+            android:clipToPadding="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        app:cardCornerRadius="5dp"
+        android:background="@color/white"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="@color/white"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Links"
+                android:fontFamily="sans-serif-black"
+                android:textSize="16sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/black"
+                android:layout_marginStart="15dp"
+                />
+
+            <TextView
+                android:id="@+id/upload_Links"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add"
+                android:layout_marginEnd="10dp"
+                android:paddingHorizontal="22dp"
+                android:paddingVertical="5dp"
+                android:textSize="13sp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/add_classes_btn_selector"
+                android:textColor="@color/white"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/no_Links_available_text"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginHorizontal="15dp"
+            android:text="No Links Available, Upload one"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/links_recylerview"
+            android:clipToPadding="false"
+            android:layout_marginTop="5dp"
+            android:layout_marginHorizontal="15dp"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"/>
+
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

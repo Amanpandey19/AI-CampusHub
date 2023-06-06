@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:backgroundTint="@color/lightGrey"
+    android:background="@color/white"
+    tools:context=".Home.MyClassFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/lightGrey"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="56dp"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_height="wrap_content">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="My Class"
+                    android:layout_alignParentStart="true"
+                    android:fontFamily="sans-serif-black"
+                    android:textSize="20sp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/black"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/add_subjects_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Subjects"
+                    android:layout_alignParentEnd="true"
+                    android:textSize="12sp"
+                    android:textAllCaps="false"
+                    android:minWidth="0dp"
+                    android:minHeight="0dp"
+                    android:paddingHorizontal="15dp"
+                    android:clickable="true"
+                    android:background="@drawable/add_classes_btn_selector"
+                    android:paddingVertical="7dp"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/white"
+                    android:layout_marginStart="20dp"
+                    android:focusable="true" />
+            </RelativeLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/class_recycler_view"
+                android:layout_width="match_parent"
+                android:clipToPadding="false"
+                android:layout_marginHorizontal="10dp"
+                android:layout_marginTop="8dp"
+                android:layout_height="wrap_content"/>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ask_doubt_layout"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                app:cardCornerRadius="5dp"
+                android:clickable="true"
+                android:background="@drawable/ask_doubt_card_background"
+                app:cardElevation="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/ask_doubt_card_background"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="7dp"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+                            <TextView
+                                android:layout_marginHorizontal="12dp"
+                                android:layout_width="wrap_content"
+                                android:textSize="18sp"
+                                android:text="Ask doubts"
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"/>
+
+                            <TextView
+                                android:layout_marginTop="2dp"
+                                android:layout_marginStart="12dp"
+                                android:layout_width="match_parent"
+                                android:textSize="13sp"
+                                android:layout_marginEnd="200dp"
+                                android:text="Ask your doubts from an AI powered ChatBot"
+                                android:layout_marginBottom="10dp"
+                                android:textColor="@color/black"
+                                android:layout_height="wrap_content"/>
+
+                        </LinearLayout>
+
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:src="@drawable/icons8robot100" />
+
+                    </RelativeLayout>
+
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                app:cardCornerRadius="5dp"
+                android:background="@color/white"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginTop="8dp"
+                android:clipToPadding="false"
+                android:layout_marginBottom="3dp"
+                android:backgroundTint="@color/white"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="5dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Time table"
+                            android:fontFamily="sans-serif-black"
+                            android:textSize="18sp"
+                            android:layout_marginTop="5dp"
+                            android:textColor="@color/black"
+                            android:layout_marginStart="10dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/upload_timeTable"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Add New"
+                            android:layout_marginEnd="10dp"
+                            android:paddingHorizontal="10dp"
+                            android:paddingVertical="5dp"
+                            android:textSize="13sp"
+                            android:layout_alignParentEnd="true"
+
+                            android:background="@drawable/add_classes_btn_selector"
+                            android:textColor="@color/white"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/no_time_table_available_text"
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginHorizontal="10dp"
+                        android:text="No Time Table Available, Upload one"/>
+                    <LinearLayout
+                        android:id="@+id/time_table_view"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/timeTable_url"
+                            android:layout_width="wrap_content"
+                            android:text="View Time Table"
+                            android:textColor="@color/blue"
+                            android:textSize="14sp"
+                            android:autoLink="web"
+                            android:textStyle="bold"
+                            android:textColorLink="@color/blue"
+                            android:linksClickable="true"
+                            android:layout_marginTop="5dp"
+                            android:layout_height="wrap_content"/>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="10dp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/time_table_author"
+                                android:layout_width="wrap_content"
+                                android:text="Posted By - Aman Pandey"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:gravity="start"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="wrap_content"/>
+
+
+                            <TextView
+                                android:id="@+id/time_table_uploadtime"
+                                android:layout_width="wrap_content"
+                                android:text="On 13 Mar 23"
+                                android:textColor="@color/black"
+                                android:textSize="13sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_marginTop="5dp"
+                                android:layout_height="wrap_content"/>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/about_a_subject"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="15dp"
+                app:cardCornerRadius="5dp"
+                android:clickable="true"
+                android:clipToPadding="false"
+                android:background="@drawable/ask_doubt_card_background"
+                app:cardElevation="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="wrap_content"
+                android:focusable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:backgroundTint="@color/white"
+                    android:background="@drawable/ask_doubt_card_background"
+                    android:layout_height="match_parent">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/did_you_know_tv"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginEnd="60dp"
+                            android:layout_width="wrap_content"
+                            android:textSize="18sp"
+                            android:text="Did You Know ?"
+                            android:layout_alignParentStart="true"
+                            android:textStyle="bold"
+                            android:textColor="@color/black"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginEnd="10dp"
+                            android:src="@drawable/icons8study99" />
+
+
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/response_tv"
+                        android:layout_marginStart="12dp"
+                        android:layout_width="match_parent"
+                        android:textSize="13sp"
+                        android:autoLink="web"
+                        android:textColorLink="@color/blue"
+                        android:layout_marginEnd="20dp"
+                        android:textIsSelectable="true"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="10dp"
+                        android:textColor="@color/black"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+
+
+</LinearLayout>

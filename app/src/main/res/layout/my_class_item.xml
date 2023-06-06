@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/my_subject_cardview"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="5dp"
+    android:clickable="true"
+    android:layout_margin="5dp"
+    android:backgroundTint="@color/white"
+    android:background="@drawable/ask_doubt_card_background"
+    android:layout_height="wrap_content"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:backgroundTint="@color/white"
+        android:background="@drawable/ask_doubt_card_background"
+        android:padding="15dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/class_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Data Analytics"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:fontFamily="sans-serif-black"
+            android:textSize="13sp"
+            android:drawablePadding="6dp"
+            android:drawableStart="@drawable/baseline_library_books_24"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/class_links_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3 Links available"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:id="@+id/class_notes_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="14 Notes Available"
+            android:textSize="13sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/black"
+            />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

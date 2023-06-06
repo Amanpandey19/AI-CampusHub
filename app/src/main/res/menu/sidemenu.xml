@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/option_home"
+            android:title="Home"
+            android:icon="@drawable/ic_home"/>
+        <item android:id="@+id/option_my_profile"
+            android:icon="@drawable/ic_account"
+            android:title="My Profile"/>
+        <item android:id="@+id/option_customer_support"
+            android:icon="@drawable/support"
+            android:title="Customer Support"/>
+        <item android:id="@+id/option_logout"
+            android:icon="@drawable/ic_logout_24"
+            android:title="Logout"/>
+        <item android:id="@+id/option_privacy_policy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Privacy Policy"/>
+    </group>
+
+</menu>
