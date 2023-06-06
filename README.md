@@ -12,6 +12,7 @@ Here are some screenshots of app
 ![Screenshot](myclass.jpg)
 ![Screenshot](post.jpg)
 ![Screenshot](chatgpt.jpg)
+![Screenshot](chats.jpg)
 ![Screenshot](videocall.jpg)
 ![Screenshot](audiocall.jpg)
 ![Screenshot](attendance.jpg)
