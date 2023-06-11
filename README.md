@@ -6,8 +6,8 @@ You will need three things for this application to work
 3. FCM Server Key
 
 Here are some screenshots of app
-<img src="signup.jpg" width=25% height=50%>
-<img src="login.jpg" width=25% height=50%>
+<img src="signup.jpg" width=25% height=50% margin=50px>
+<img src="login.jpg" width=25% height=50% margin=100px>
 <img src="profile.jpg" width=25% height=50%>
 <img src="myclass.jpg" width=25% height=50%>
 <img src="post.jpg" width=25% height=50%>
