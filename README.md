@@ -6,7 +6,7 @@ You will need three things for this application to work
 3. FCM Server Key
 
 Here are some screenshots of app
-![Screenshot](signup.jpg)
+<img src="signup.jpg" width=25% height=50%>
 ![Screenshot](login.jpg)
 ![Screenshot](profile.jpg)
 ![Screenshot](myclass.jpg)
