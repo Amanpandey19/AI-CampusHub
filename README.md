@@ -7,24 +7,24 @@ You will need three things for this application to work
 
 Here are some screenshots of app
 <img src="signup.jpg" width=25% height=50%>
-![Screenshot](login.jpg)
-![Screenshot](profile.jpg)
-![Screenshot](myclass.jpg)
-![Screenshot](post.jpg)
-![Screenshot](chatgpt.jpg)
-![Screenshot](chats.jpg)
-![Screenshot](videocall.jpg)
-![Screenshot](audiocall.jpg)
-![Screenshot](attendance.jpg)
-![Screenshot](connections.jpg)
-![Screenshot](suggestions.jpg)
-![Screenshot](class.jpg)
-![Screenshot](subjects.jpg)
-![Screenshot](mysubject.jpg)
-![Screenshot](chat.jpg)
-![Screenshot](nav.jpg)
-![Screenshot](pdf.jpg)
-![Screenshot](addsubject.jpg)
+<img src="login.jpg" width=25% height=50%>
+<img src="profile.jpg" width=25% height=50%>
+<img src="myclass.jpg" width=25% height=50%>
+<img src="post.jpg" width=25% height=50%>
+<img src="chatgpt.jpg" width=25% height=50%>
+<img src="chats.jpg" width=25% height=50%>
+<img src="videocall.jpg" width=25% height=50%>
+<img src="audiocall.jpg" width=25% height=50%>
+<img src="attendance.jpg" width=25% height=50%>
+<img src="connections.jpg" width=25% height=50%>
+<img src="class.jpg" width=25% height=50%>
+<img src="subjects.jpg" width=25% height=50%>
+<img src="mysubject.jpg" width=25% height=50%>
+<img src="chat.jpg" width=25% height=50%>
+<img src="nav.jpg" width=25% height=50%>
+<img src="pdf.jpg" width=25% height=50%>
+<img src="addsubject.jpg" width=25% height=50%>
+
 
 
 
